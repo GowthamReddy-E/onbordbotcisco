@@ -1,0 +1,63 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Hello there! Welcome to CISCO",
+                    "weight": "Bolder",
+                    "size": "Large",
+                    "wrap": true
+                },
+                
+                {
+                    "type": "TextBlock",
+                    "text": "I'm KHOJ,here to assist you with any questions or concerns you might have regarding our projects and the onboarding process for new hires. Whether you're a seasoned team member or a fresh face, I'm here to make your experience as smooth as possible.",
+                    "wrap": true,
+                    "spacing": "Small"
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Explore FMC",
+                    "data": {
+                        "callback_keyword": "fm",
+                        "invoke_command": true
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "Explore CDO",
+                    "data": {
+                        "callback_keyword": "cd",
+                        "invoke_command": true
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "Explore PCloud",
+                    "data": {
+                        "callback_keyword": "pcloud",
+                        "invoke_command": true
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "Explore FTD",
+                    "data": {
+                        "callback_keyword": "ftd",
+                        "invoke_command": true
+                    }
+                }
+            ]
+        }
+    ]
+}
